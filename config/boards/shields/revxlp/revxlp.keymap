@@ -20,50 +20,50 @@
         qwerty_layer {
             display-name = "Base";
             bindings = <
-&kp ESC             &kp Q       &kp W       &kp E        &kp R         &kp T        &kp Y           &kp U            &kp I        &kp O       &kp P               &kp LBKT
-&kp TAB             &mt LGUI A  &mt LALT S  &mt LCTRL D  &mt LSHIFT F  &kp G        &kp H           &mt RSHIFT J     &mt RCTRL K  &mt RALT L  &mt RGUI SEMICOLON  &kp APOS
-&kp LA(LEFT_SHIFT)  &kp Z       &kp X       &kp C        &kp V         &kp B        &kp N           &kp M            &kp COMMA    &kp DOT     &kp SEMI            &kp RIGHT_BRACKET
-                                            &mo MOU_L    &mo NAV_L     &kp SPACE    &lt SYM_L BSPC  &lt NUM_L ENTER  &caps_word
+       &kp ESC        &kp Q        &kp W        &kp E         &kp R          &kp T         &kp Y        &kp U            &kp I            &kp O         &kp P           &kp LBKT
+       &kp TAB        &mt LGUI A   &mt LALT S   &mt LCTRL D   &mt LSHIFT F   &kp G         &kp H        &mt RSHIFT J     &mt RCTRL K      &mt RALT L    &mt RGUI QUOT   &kp APOS
+       &kp LA(LSHFT)  &kp Z        &kp X        &kp C         &kp V          &kp B         &kp N        &kp M            &kp COMMA        &kp DOT       &kp SEMI        &kp RBKP
+                                                &mo MOU_L     &mo NAV_L      &kp SPACE     &lt SYM_L BSPC   &lt NUM_L ENTER  &caps_word
             >;
         };
 
         num_layer {
             display-name = "Numbers";
             bindings = <
-&none  &kp LEFT_BRACKET  &kp N7  &kp N8   &kp N9  &kp RBKT     &none   &none   &none   &none  &none  &none
-&none  &kp SEMI          &kp N4  &kp N5   &kp N6  &kp EQUAL    &none   &none   &none   &none  &none  &none
-&none  &kp GRAVE         &kp N1  &kp N2   &kp N3  &kp BSLH     &none   &none   &none   &none  &none  &none
-                                 &kp DOT  &kp N0  &kp MINUS    &trans  &trans  &trans
+       &none         &kp RBKT   &kp N7   &kp N8   &kp N9       &kp RBKT       &none        &none       &none   &none   &none    &none
+       &none         &kp SEMI   &kp N4   &kp N5   &kp N6       &kp EQUAL      &none        &none       &none   &none   &none    &none
+       &none         &kp GRAVE  &kp N1   &kp N2   &kp N3       &kp BSLH       &none        &none       &none   &none   &none    &none
+                                         &kp DOT  &kp N0       &kp MINUS      &trans        &trans       &trans
             >;
         };
 
         sym_layer {
             display-name = "Symbols";
             bindings = <
-&none  &kp LBRC   &kp AMPS  &kp STAR   &kp LPAR   &kp RIGHT_BRACE    &none   &none   &none   &none  &none  &none
-&none  &kp COLON  &kp DLLR  &kp PRCNT  &kp CARET  &kp PLUS           &none   &none   &none   &none  &none  &none
-&none  &kp TILDE  &kp EXCL  &kp AT     &kp HASH   &kp PIPE           &none   &none   &none   &none  &none  &none
-                            &kp LPAR   &kp RPAR   &kp UNDER          &trans  &trans  &trans
+       &none         &kp LBRC   &kp AMPS     &kp STAR    &kp LPAR       &kp RBRKT     &none        &none       &none      &none     &none &none
+       &none         &kp COLON  &kp DLLR     &kp PRCNT   &kp CARET      &kp PLUS      &none        &none       &none      &none     &none &none
+       &none         &kp TILDE  &kp EXCL     &kp AT      &kp HASH       &kp PIPE      &none        &none       &none      &none     &none &none
+                                             &kp LPAR    &kp RPAR       &kp UNDER     &trans        &trans       &trans
             >;
         };
 
         nav_layer {
             display-name = "Navigation";
             bindings = <
-&none  &none  &none  &none  &none   &none     &kp C_AC_COPY   &kp C_AC_PASTE  &none         &none      &none  &none
-&none  &none  &none  &none  &none   &none     &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT  &none  &none
-&none  &none  &none  &none  &none   &none     &kp HOME        &kp PAGE_DOWN   &kp PG_UP     &kp END    &none  &none
-                     &none  &trans  &trans    &trans          &trans          &none
+       &none         &none     &none     &none      &none          &none       &none           &kp HOME     &kp PG_DN     &kp PG_UP  &kp END     &none
+       &none         &none     &none     &none      &none          &none       &none           &kp LEFT     &kp DOWN      &kp UP     &kp RIGHT   &none
+       &none         &none     &none     &none      &none          &none       &none           &none        &none         &none      &none       &none
+                                         &none      &trans         &trans      &trans          &trans       &none
             >;
         };
 
         mou_layer {
             display-name = "Mouse";
             bindings = <
-&none  &none  &none  &none  &none  &none    &none           &none           &none         &none            &none  &none
-&none  &none  &none  &none  &none  &none    &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_UP  &mmv MOVE_RIGHT  &none  &none
-&none  &none  &none  &none  &none  &none    &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_UP  &msc SCRL_RIGHT  &none  &none
-                     &none  &none  &none    &mkp LCLK       &mkp RCLK       &mkp MCLK
+       &none         &none     &none     &none      &none          &none       &none           &none           &none          &none             &none &none
+       &none         &none     &none     &none      &none          &none       &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_UP   &mmv MOVE_RIGHT   &none &none
+       &none         &none     &none     &none      &none          &none       &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_UP   &msc SCRL_RIGHT   &none &none
+                                         &none      &none          &none       &mkp LCLK       &mkp RCLK       &mkp MCLK
             >;
         };
     };
