@@ -39,6 +39,14 @@
             hold-trigger-key-positions = <0 1 2 3 4 5 12 13 14 15 16 17 24 25 26 27 28 29 36 37 38>; 
             hold-trigger-on-release;
         };
+        bs_l: layer_quick_tap {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            flavor = "hold-preferred";
+            tapping-term-ms = <200>;
+            quick-tap-ms = <200>;
+            bindings = <&mo>, <&kp>;
+        };
     };
     keymap {
         compatible = "zmk,keymap";
@@ -49,7 +57,7 @@
        &kp ESC        &kp Q        &kp W        &kp E         &kp R          &kp T         &kp Y        &kp U            &kp I            &kp O         &kp P           &kp LBKT
        &kp TAB        &hml LGUI A   &hml LALT S   &hml LCTRL D   &hml LSHIFT F   &kp G         &kp H        &hmr RSHIFT J     &hmr RCTRL K      &hmr RALT L    &hmr RGUI SEMI   &kp APOS
        &kp LA(LSHFT)  &kp Z        &kp X        &kp C         &kp V          &kp B         &kp N        &kp M            &kp COMMA        &kp DOT       &kp SLASH       &kp RBKT
-                                                &mo MOU_L     &mo NAV_L      &kp SPACE     &lt SYM_L BSPC   &lt NUM_L ENTER  &caps_word
+                                                &mo MOU_L     &mo NAV_L      &kp SPACE     &bs_l SYM_L BSPC   &bs_l NUM_L ENTER  &caps_word
             >;
         };
 
