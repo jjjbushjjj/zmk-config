@@ -3,11 +3,18 @@
  *
  * SPDX-License-Identifier: MIT
  */
+#define ZMK_POINTING_DEFAULT_MOVE_VAL 1200  // Default is 600; increase for faster top speed
+#define ZMK_POINTING_DEFAULT_SCRL_VAL 15    // Default is 10; increase for faster scrolling
 
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/pointing.h>
 #include <dt-bindings/zmk/bt.h>
+
+&mmv {
+    time-to-max-speed-ms = <300>; // How fast it reaches top speed (lower = snappier)
+    acceleration-exponent = <1>;  // 1 = linear ramp, 2 = exponential curve
+};
 
 #define NUM_L 1
 #define SYM_L 2
